@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vote</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .login-box {
+      background: white;
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+  
+ #optionsArea label {
+  /* display: flex; */
+  font-size: 16px;
+  margin-bottom: 15px;
+  padding: 8px 12px;
+  text-align: center;
+  align-items: flex-start;
+}
+
+#optionsArea input[type="radio"] {
+  margin-right: auto;
+  transform: scale(1.2);
+  cursor: pointer;
+  background-color: black;
+  width: 20%;
+  vertical-align: text-top;
+}
+
+    button {
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+      
+    }
+
+    #message {
+      color: green;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2 id="pollQuestion">Loading poll...</h2>
+    <form id="voteForm">
+      <div id="optionsArea">
+      </div>
+      <button type="submit">Submit Vote</button>
+    </form>
+    <p id="message"></p>
+  </div>
+
+  <script src="vote.js"></script>
+</body>
+</html>
